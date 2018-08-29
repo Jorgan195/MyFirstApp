@@ -2,8 +2,8 @@ OBJECT Modification Customer(Table 18)
 {
   OBJECT-PROPERTIES
   {
-    Date=03/05/18;
-    Time=[ 7:51:19 PM];
+    Date=08/29/18;
+    Time=[ 1:33:49 PM];
     Modified=Yes;
     Version List=NAVW110.0.00.18609;
   }
@@ -13,12 +13,17 @@ OBJECT Modification Customer(Table 18)
   }
   CHANGES
   {
-    { Insertion         ;InsertAfter="Copy Sell-to Addr. to Qte From"(Field 7601);
+    { Insertion         ;InsertAfter="Contact Graph Id"(Field 9006);
                          ChangedElements=FieldCollection
                          {
                            { 50100;  ;My Field            ;Text30         }
+                           { 50101;  ;My New Fields 2     ;Text30        ;DataClassification=ToBeClassified }
                          }
                           }
+    { PropertyModification;
+                         Property=Version List;
+                         OriginalValue=NAVW111.00.00.23572;
+                         ModifiedValue=NAVW110.0.00.18609 }
   }
   CODE
   {

@@ -10,6 +10,7 @@ OBJECT Modification "Customer Card"(Page 21)
   PROPERTIES
   {
     Target="Customer Card"(Page 21);
+    TargetPageType=Card;
   }
   CHANGES
   {
@@ -29,6 +30,10 @@ OBJECT Modification "Customer Card"(Page 21)
 
                          }
                           }
+    { PropertyModification;
+                         Property=Version List;
+                         OriginalValue=NAVW111.00.00.21836;
+                         ModifiedValue=NAVW110.0.00.19421 }
   }
   CODE
   {
